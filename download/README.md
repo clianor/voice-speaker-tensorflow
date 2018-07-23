@@ -1,14 +1,4 @@
-# Data Download
-
-### 사용 라이브러리
-1. pytube
-    - 다운로드 : ``` pip install pytube ```
-    - 설명 : 유튜브에서 영상을 다운로드 하기 위한 라이브러리.
-2. moviepy
-    - 다운로드 : ``` pip install moviepy ```
-    - 설명 : 다운로드 받은 영상에서 오디오만을 추출하기 위한 라이브러리.
-
-* * *
+# Data download & Export wav files
 
 ### 파일 설명
 - download_youtube.py
