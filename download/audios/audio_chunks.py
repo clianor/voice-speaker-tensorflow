@@ -1,4 +1,4 @@
-import os
+﻿import os
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
 
@@ -24,4 +24,4 @@ def AudioChuncks(filePath, format):
             soundCount += 1
 
 if __name__ == "__main__":
-    AudioChuncks("./yVxDSnTFN6o&t=5s.wav", "wav")
+    AudioChuncks("./yVxDSnTFN6o&t.wav", "wav")
