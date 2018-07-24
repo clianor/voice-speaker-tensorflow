@@ -14,3 +14,7 @@
 2. ``` python export_audioChunks.py ``` 처럼 사용하여 오디오의 chunk들을 추출합니다.
 3. ``` python audio_total_length.py ``` 처럼 사용하여 추출된 chunk들의 총 길이를 계산합니다. (단위 : sec)
 * * *
+
+### Speech to text
+- 구글 Speech API를 이용 아래 참조.
+    - https://cloud.google.com/speech-to-text/docs/reference/libraries?hl=ko

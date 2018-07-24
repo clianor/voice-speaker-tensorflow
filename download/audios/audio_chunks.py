@@ -6,7 +6,8 @@ def AudioChuncks(filePath, format):
     if "chuncks" not in os.listdir():
         os.mkdir("chuncks")
 
-    sound = AudioSegment.from_file(filePath, format=format)
+    sound = AudioSegment.from_file("data/"+filePath, format=format)
+    sound = sound.set_channels(1)
 
     chunks = split_on_silence(
         sound,
@@ -20,8 +21,8 @@ def AudioChuncks(filePath, format):
     for chunk in chunks:
         # 잘려진 음성의 길이가 0.8초 이상일때 사용함.
         if chunk.duration_seconds > 0.8:
-            chunk.export("./chuncks/"+os.path.splitext(filePath)[0]+"{0}.wav".format(soundCount), format="wav")
+            chunk.export("chuncks/"+os.path.splitext(filePath)[0]+"{0}.wav".format(soundCount), format="wav")
             soundCount += 1
 
 if __name__ == "__main__":
-    AudioChuncks("./yVxDSnTFN6o&t.wav", "wav")
+    AudioChuncks("yVxDSnTFN6o&t.wav", "wav")
